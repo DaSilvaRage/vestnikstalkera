@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 80vh;
-    }
-
-    #fullscreen-container {
-        position: relative;
-        padding-top: max(60%, 324px);
-        width: 100%;
-        height: 0;
-    }
-
-    iframe {
-        position: absolute;
-        border: none;
-        width: 100%;
-        height: 0;
-        left: 0;
-        top: 0;
-    }
-</style>
-</head>
 <body>
-<script>
-    function fullScreen(element) {
-      if(element.requestFullscreen) {
-        element.requestFullscreen();
-      } else if(element.webkitRequestFullscreen) {
-        element.webkitRequestFullscreen();
-      } else if(element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-      }
-    }
-
-    var html = document.documentElement;
-    fullScreen(html);
-</script>
-
-<div id="fullscreen-container">
-    <iframe src="https://online.fliphtml5.com/tmrdz/kxuf/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
-</div>
-
+<div style="position:relative;padding-top:max(60%,324px);width:100%;height:0;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/tmrdz/kxuf/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
 </body>
 </html>
